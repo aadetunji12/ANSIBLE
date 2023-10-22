@@ -78,7 +78,7 @@
         user_data: |
           #!/bin/bash
           sudo apt update -y
-          sudo apt install docker.io -y
+          sudo apt install docker-ce -y
           sudo systemctl start docker
           sudo systemctl enable docker
           sudo docker run -d --name 2048 -p 3000:3000 sushantkapare1717/2048:latest
